@@ -1,51 +1,57 @@
-# ATLÂNTICO STUDIO — Estrutura inspirada na página de Marketing Digital da RED
+# ATLÂNTICO STUDIO — Site estilo RED refinado
 
-Pacote estático pronto para GitHub Pages com HTML, CSS e JavaScript puros.
-
-## O que foi ajustado
-
-- Estrutura da página reorganizada no padrão de agência: header com serviços, hero, apresentação, áreas de atuação, projetos selecionados, feedback, blog, formulário e rodapé.
-- Linguagem comercial adaptada para ATLÂNTICO STUDIO.
-- Hero com vídeo local de mar em movimento.
-- Logo usada no loading, header, favicon e rodapé.
-- Layout responsivo para desktop, tablet e mobile.
-- Formulário gera uma mensagem pronta e abre o Instagram da ATLÂNTICO STUDIO.
+Site estático, responsivo e pronto para publicação no GitHub Pages.
 
 ## Estrutura
 
-```txt
-index.html
-style.css
-script.js
-README.md
-assets/
-  favicon/
-  images/
-  logo/
-  icons/
-  video/
+```text
+/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+    ├── favicon/
+    ├── icons/
+    ├── images/
+    ├── logo/
+    └── video/
 ```
 
-## Como publicar no GitHub Pages
+## Como subir no GitHub Pages
 
-1. Suba todos os arquivos para a raiz do repositório.
-2. Vá em **Settings → Pages**.
-3. Em **Build and deployment**, selecione **Deploy from a branch**.
-4. Escolha a branch **main** e a pasta **/root**.
-5. Salve e aguarde o link do GitHub Pages.
+1. Extraia o ZIP.
+2. Envie `index.html`, `style.css`, `script.js`, `README.md` e a pasta `assets` para a raiz do repositório.
+3. No GitHub, acesse **Settings → Pages**.
+4. Em **Build and deployment**, selecione **Deploy from a branch**.
+5. Branch: `main`. Folder: `/root`.
+6. Clique em **Save** e aguarde o link.
 
-## Como alterar o destino do formulário
+## Personalização rápida
 
-Abra `script.js` e edite:
+- Textos e seções: `index.html`
+- Cores, responsividade e desenhos: `style.css`
+- Loading, menu e formulário: `script.js`
+- Vídeo do Hero: `assets/video/ocean-cinematic.mp4`
+- Logo: `assets/logo/logo-atlantico-studio.svg`
+- Favicon: `assets/favicon/`
+
+## WhatsApp
+
+No arquivo `script.js`, preencha:
 
 ```js
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '5511999999999';
 ```
 
-Exemplo:
+Use apenas números, com DDI e DDD.
 
-```js
-const WHATSAPP_NUMBER = '351999999999';
-```
+## Refinamentos incluídos
 
-Se o campo ficar vazio, o formulário abre o Instagram `@atlanticostudioo`.
+- Estrutura de página inspirada na referência: hero, serviços alternados, projetos, feedback, blog, formulário e footer.
+- Paleta ATLÂNTICO em navy e dourado.
+- Vídeo oceânico no Hero.
+- Loading com marca.
+- Header fixo com dropdown de serviços e seletor de idioma.
+- Desenhos/ilustrações feitos em CSS para cada serviço.
+- Responsividade mobile-first e controle de overflow.
