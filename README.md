@@ -1,57 +1,36 @@
-# ATLÂNTICO STUDIO — Site estilo RED refinado
+# ATLÂNTICO STUDIO — site pronto com imagens e conteúdo demonstrativo
 
-Site estático, responsivo e pronto para publicação no GitHub Pages.
+Versão estática em HTML/CSS/JS pronta para subir no GitHub Pages.
 
-## Estrutura
+## O que entrou nesta versão
 
-```text
-/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── assets/
-    ├── favicon/
-    ├── icons/
-    ├── images/
-    ├── logo/
-    └── video/
-```
+- Estrutura estilo agência de marketing digital.
+- Hero com vídeo oceânico local.
+- Imagens externas de internet em serviços, agência, portfólio, feedbacks e blog.
+- Cases demonstrativos completos.
+- Feedbacks demonstrativos para visualização do layout.
+- Blog com cards prontos.
+- Formulário com seleção de serviços.
+- Logo, favicon e loading screen da ATLÂNTICO STUDIO.
 
-## Como subir no GitHub Pages
+## Como publicar no GitHub Pages
 
 1. Extraia o ZIP.
 2. Envie `index.html`, `style.css`, `script.js`, `README.md` e a pasta `assets` para a raiz do repositório.
-3. No GitHub, acesse **Settings → Pages**.
+3. Vá em **Settings → Pages**.
 4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Branch: `main`. Folder: `/root`.
-6. Clique em **Save** e aguarde o link.
+5. Escolha a branch `main` e pasta `/root`.
+6. Clique em **Save**.
 
-## Personalização rápida
+## Onde editar
 
-- Textos e seções: `index.html`
-- Cores, responsividade e desenhos: `style.css`
-- Loading, menu e formulário: `script.js`
-- Vídeo do Hero: `assets/video/ocean-cinematic.mp4`
-- Logo: `assets/logo/logo-atlantico-studio.svg`
-- Favicon: `assets/favicon/`
+- Textos e imagens: `index.html`
+- Cores, tamanhos, responsividade e layout: `style.css`
+- Menu, loading, animações e formulário: `script.js`
+- Logo, favicon e vídeo: pasta `assets/`
 
-## WhatsApp
+## Observação importante
 
-No arquivo `script.js`, preencha:
+Os cases, nomes e feedbacks desta versão são demonstrativos para o site já parecer completo. Antes de rodar tráfego ou publicar como definitivo, substitua por clientes, depoimentos e projetos reais.
 
-```js
-const WHATSAPP_NUMBER = '5511999999999';
-```
-
-Use apenas números, com DDI e DDD.
-
-## Refinamentos incluídos
-
-- Estrutura de página inspirada na referência: hero, serviços alternados, projetos, feedback, blog, formulário e footer.
-- Paleta ATLÂNTICO em navy e dourado.
-- Vídeo oceânico no Hero.
-- Loading com marca.
-- Header fixo com dropdown de serviços e seletor de idioma.
-- Desenhos/ilustrações feitos em CSS para cada serviço.
-- Responsividade mobile-first e controle de overflow.
+As imagens externas estão carregadas por URL. Se quiser deixar tudo 100% local, baixe as imagens e troque os links no `index.html`.
